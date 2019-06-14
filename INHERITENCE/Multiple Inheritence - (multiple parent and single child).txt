@@ -1,0 +1,30 @@
+#Multple Inheritence 
+#Multiple Parent
+
+#parent Class-1 
+class Father:
+  fathername = " "
+
+  def show_father(self):
+    print(self.fathername)
+
+#parent Class-2
+class Mother:
+  mothername = " "
+
+  def show_mother(self):
+    print(self.mothername)
+  
+#child class-1  
+class Son(Father,Mother):
+  def show_parent(self):
+    print("Father ", self.fathername)
+    print("Mother",self.mothername)
+
+#object creation of child class
+obj1 = Son()
+obj1.fathername = "John"
+obj1.mothername = "Clair"
+obj1.show_parent()
+
+

@@ -1,0 +1,21 @@
+#class1 (Parent Class)
+class Calculation1:
+  def Addition(self,a,b):
+    return a+b
+
+#class2 (Parent Class)
+class Calculation2:
+  def Multiplication(self,a,b):
+    return a*b
+
+#class3 (Child Class)
+#one Child class inherited from 2 parent class
+class Multiple(Calculation1,Calculation2):
+  def Divide(self,a,b):
+    return a/b
+    
+#object creation
+obj1 = Multiple()
+print(obj1.Addition(40,10))
+print(obj1.Multiplication(40,10))
+print(obj1.Divide(40,10))
