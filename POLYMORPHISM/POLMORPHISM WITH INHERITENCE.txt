@@ -1,0 +1,22 @@
+#class1
+class Cars:
+  def intro(self):
+    print("There are many types of Cars")
+
+#class2  
+class Automated(Cars):
+    def SelfDriving(self):
+      print("Automated Self Driving Cars")
+
+#class3
+class Hybrid(Automated):
+    def HybridCars(self):
+      print("Both fuel and electric technology in a car")
+
+#object creation
+obj1 = Hybrid()
+
+
+obj1.HybridCars()
+obj1.SelfDriving()
+obj1.intro()

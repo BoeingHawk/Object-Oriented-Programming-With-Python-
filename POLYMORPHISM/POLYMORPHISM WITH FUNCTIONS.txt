@@ -1,0 +1,38 @@
+#POLYMORPHISM WITH FUNCTIONS
+#here greetings is a single METHOD/FUNCTION which is used in many classes.
+#greetings is a method accessed by all the classes.
+#it is example of POLMORPHISM WITH FUNCTION 
+
+#class 1
+class English:
+  def greetings(self):
+    print("hello")
+
+#class 2
+class French:
+  def greetings(self):
+    print("Bonjour")
+
+#class 3
+class Spanish:
+  def greetings(self):
+    print("Hola")
+
+#main method
+def intro(language):
+  language.greetings()
+
+
+#objectCreation
+#obj1= English()
+#obj2 = French()
+#obj3 = Spanish()
+
+intro(obj1)
+intro(obj2)
+intro(obj3)
+
+#also able to directly access the intro method with classes
+#intro(English())
+#intro(French())
+#intro(Spanish())
